@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import import_ipynb
+
+
+# In[2]:
+
+
+from flask import Flask,request,jsonify
+from flask_cors import CORS
+import recommendation
+
+
+# In[3]:
+
+
+app = Flask(__name__)
+CORS(app) 
+
+
+# In[ ]:
+
+
+@app.route('/movie', methods=['GET'])
+def recommend_movies():
+        res = recommendation1.results(request.args.get('name'))
+        return jsonify(res)
+
+if __name__=='__main__':
+        app.run(port = 5000, debug = True, use_reloader = False)
+
+
+# In[ ]:
+
+
+
+
