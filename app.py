@@ -2,11 +2,6 @@
 # coding: utf-8
 
 # In[1]:
-
-
-import import_ipynb
-
-
 # In[2]:
 
 
@@ -25,7 +20,7 @@ CORS(app)
 # In[4]:
 
 
-@app.route('/places', methods=['GET','POST'])
+@app.route('/places', methods=['GET'])
 def recommend_movies():
         res = recommendation1.results(request.args.get('name'))
         return jsonify(res)
