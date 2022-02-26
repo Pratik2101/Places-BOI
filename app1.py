@@ -25,7 +25,7 @@ CORS(app)
 # In[ ]:
 
 
-@app.route('/', methods=['GET'])
+@app.route('/places', methods=['GET'])
 def recommend_movies():
         res = recommendation1.results(request.args.get('name'))
         return jsonify(res)
