@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-import import_ipynb
-
+# In[1]
 
 # In[2]:
 
@@ -31,7 +27,7 @@ def recommend_movies():
         return jsonify(res)
 
 if __name__=='__main__':
-        app.run(port = 5000, debug = True, use_reloader = False)
+        app.run(port = 5000, debug = True)
 
 
 # In[ ]:
