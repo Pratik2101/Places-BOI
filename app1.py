@@ -25,13 +25,13 @@ CORS(app)
 # In[ ]:
 
 
-@app.route('/movie', methods=['GET'])
+@app.route('/', methods=['GET'])
 def recommend_movies():
         res = recommendation1.results(request.args.get('name'))
         return jsonify(res)
 
 if __name__=='__main__':
-        app.run(port = 5000, debug = True, use_reloader = False)
+        app.run(port = 5000, debug = True)
 
 
 # In[ ]:
