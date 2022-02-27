@@ -14,7 +14,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def get_data():
-    movie_data = pd.read_excel("data_places.xlsx")
+    movie_data = pd.read_excel("tourist_places_data.xlsx")
     movie_data['name'] = movie_data['name'].str.lower()
     return movie_data
 
