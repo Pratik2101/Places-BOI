@@ -99,14 +99,5 @@ def results(place_name):
                 return recommendations.to_dict('records')
 
 
-# In[9]:
-
-
-results('panshet waterpark')
-
-
-# In[ ]:
-
-
 
 
