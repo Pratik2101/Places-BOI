@@ -5,7 +5,6 @@ gunicorn
 joblib
 jsonschema
 pandas
-import-ipynb
 ipython
 pickleshare
 requests
