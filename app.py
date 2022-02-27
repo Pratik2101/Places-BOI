@@ -17,6 +17,10 @@ CORS(app)
 
 # In[4]:
 
+@app.route('/')
+def hello_world():
+    return 'This is my first API call!'
+
 
 @app.route('/places', methods=['GET'])
 def recommend_movies():
