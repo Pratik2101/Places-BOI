@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[1]
-import import_ipynb
 # In[2]:
 
 
