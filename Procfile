@@ -1,1 +1,1 @@
-web: gunicorn app:app --max-requests 2
+gunicorn -k eventlet -b 0.0.0.0:5000 --timeout 600 app:app
