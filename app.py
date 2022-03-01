@@ -12,6 +12,7 @@ from nbformat import read
 
 
 from flask import Flask,request,jsonify
+from itsdangerous import json as _json
 from flask_cors import CORS
 import recommendation1
 
