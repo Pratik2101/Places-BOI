@@ -61,7 +61,7 @@ def recommend_places(title, data, combine, transform):
         
         sim_scores = list(enumerate(transform[index]))
         sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-        sim_scores = sim_scores[1:21]
+        sim_scores = sim_scores[0:10]
 
 
         places_indices = [i[0] for i in sim_scores]
